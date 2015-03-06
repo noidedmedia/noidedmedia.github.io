@@ -13,10 +13,20 @@ article h1 {
   margin-bottom: 0px; }
 
 #intro {
-  display: flex; }
+  display: flex;
+  flex-direction: row; }
   @media all and (max-width: 420px) {
     #intro {
       flex-direction: column; } }
-  @media all and (max-width: 1200px) {
-    #intro {
-      flex-direction: row; } }
+
+#animated-wheel {
+  width: 50vw; }
+  @media all and (max-width: 420px) {
+    #animated-wheel {
+      width: 100vw; } }
+
+.half-text {
+  width: 50vw; }
+  @media all and (max-width: 420px) {
+    .half-text {
+      width: 100vw; } }

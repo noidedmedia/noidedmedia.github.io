@@ -7,7 +7,6 @@ body{
 }
 
 article{
-
   h1{
     text-align: center;
     font-weight: lighter;
@@ -17,15 +16,27 @@ article{
     color: white;
     font-family: "Helvetica Neue", sans-serif;
     margin-bottom: 0px;
-}
+  }
 }
 
 #intro{
   display: flex;
   @media all and (max-width: $break-small){
     flex-direction: column;
-}
-@media all and (max-width: $break-large){
+  }
   flex-direction: row;
 }
+
+#animated-wheel{
+  @media all and (max-width: $break-small){
+    width: 100vw;
+  }
+  width: 50vw;
+}
+
+.half-text{
+  @media all and (max-width: $break-small){
+    width: 100vw;
+  }
+  width: 50vw;
 }
