@@ -1,9 +1,13 @@
+$break-small: 420px; // lol
+$break-large: 1200px;
+
 body{
   margin: 0px;
   padding: 0px;
 }
 
 article{
+
   h1{
     text-align: center;
     font-weight: lighter;
@@ -13,9 +17,15 @@ article{
     color: white;
     font-family: "Helvetica Neue", sans-serif;
     margin-bottom: 0px;
-  }
+}
 }
 
 #intro{
-  height: 83vh;
+  display: flex;
+  @media all and (max-width: $break-small){
+    flex-direction: column;
+}
+@media all and (max-width: $break-large){
+  flex-direction: row;
+}
 }

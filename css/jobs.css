@@ -13,4 +13,10 @@ article h1 {
   margin-bottom: 0px; }
 
 #intro {
-  height: 83vh; }
+  display: flex; }
+  @media all and (max-width: 420px) {
+    #intro {
+      flex-direction: column; } }
+  @media all and (max-width: 1200px) {
+    #intro {
+      flex-direction: row; } }
