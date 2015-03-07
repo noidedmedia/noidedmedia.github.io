@@ -42,11 +42,11 @@ article h1 {
   font-family: "Helvetica Neue", sans-serif;
   margin-bottom: 0; }
 
-#intro {
+sectio {
   display: flex;
   flex-direction: row; }
   @media all and (max-width: 420px) {
-    #intro {
+    sectio {
       flex-direction: column; } }
 
 #animated-wheel {
@@ -62,5 +62,3 @@ article h1 {
   @media all and (max-width: 420px) {
     .half-text {
       width: 100vw; } }
-
-/*# sourceMappingURL=jobs.css.map */
