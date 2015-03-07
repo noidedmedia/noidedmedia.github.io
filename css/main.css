@@ -42,11 +42,11 @@ article h1 {
   font-family: "Helvetica Neue", sans-serif;
   margin-bottom: 0; }
 
-sectio {
+section {
   display: flex;
   flex-direction: row; }
   @media all and (max-width: 420px) {
-    sectio {
+    section {
       flex-direction: column; } }
 
 #animated-wheel {
@@ -58,6 +58,11 @@ sectio {
     width: 100%; }
 
 .half-text {
+  font-size: 14pt;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
   width: 50vw; }
   @media all and (max-width: 420px) {
     .half-text {

@@ -57,7 +57,7 @@ article {
   }
 }
 
-sectio{
+section{
   display: flex;
 
   @media all and (max-width: $break-small){
@@ -83,6 +83,10 @@ sectio{
   @media all and (max-width: $break-small){
     width: 100vw;
   }
-
+  font-size: 14pt;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
   width: 50vw;
 }
