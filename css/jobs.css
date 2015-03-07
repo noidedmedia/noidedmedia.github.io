@@ -24,6 +24,8 @@ article h1 {
   @media all and (max-width: 420px) {
     #animated-wheel {
       width: 100vw; } }
+  #animated-wheel img {
+    width: 100%; }
 
 .half-text {
   width: 50vw; }
