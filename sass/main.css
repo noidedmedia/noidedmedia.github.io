@@ -1,0 +1,42 @@
+/*
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.
+        on line 37 of main.css
+
+32: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:252:in `loop'
+33: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:252:in `_wait_for_changes'
+34: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:341:in `block in _start_wait_thread'
+35: *\/
+36: body:before {
+37:   white-space: pre;
+38:   font-family: monospace;
+39:   content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 52 of main.css\A \A 47: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:252:in `loop'\A 48: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:252:in `_wait_for_changes'\A 49: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:341:in `block in _start_wait_thread'\A 50: *\/\A 51: body:before {\A 52:   white-space: pre;\A 53:   font-family: monospace;\A 54:   content: \"Error: Invalid CSS after \\"...ial, sans-serif\\": expected expression (e.g. 1px, bold), was \\";\\"\A         on line 2 of main.css\A \A 1: html, body {\A 2:   font: 400 10px 'Helvetica Neue', Helvetica, Arial, sans-serif;\A 3:   margin: 0;\A 4:   padding: 0;\A 5:   overflow-x: hidden;\A 6:   background-color: #e0e0e0; }\A 7: \"; }"; }
+
+Backtrace:
+main.css:37
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/engine.rb:483:in `block in tabulate'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/engine.rb:441:in `each'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/engine.rb:441:in `each_with_index'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/engine.rb:441:in `tabulate'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/engine.rb:406:in `_to_tree'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/plugin.rb:108:in `method_missing'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+/Users/connor/.rvm/gems/ruby-2.2.3/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+/Users/connor/.rvm/gems/ruby-2.2.3/bin/sass:23:in `load'
+/Users/connor/.rvm/gems/ruby-2.2.3/bin/sass:23:in `<main>'
+/Users/connor/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `eval'
+/Users/connor/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 37 of main.css\A \A 32: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:252:in `loop'\A 33: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:252:in `_wait_for_changes'\A 34: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:341:in `block in _start_wait_thread'\A 35: */\A 36: body:before {\A 37:   white-space: pre;\A 38:   font-family: monospace;\A 39:   content: \"Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 52 of main.css\A \A 47: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:252:in `loop'\A 48: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:252:in `_wait_for_changes'\A 49: /Users/connor/.rvm/gems/ruby-2.2.3/gems/listen-2.10.1/lib/listen/listener.rb:341:in `block in _start_wait_thread'\A 50: */\A 51: body:before {\A 52:   white-space: pre;\A 53:   font-family: monospace;\A 54:   content: \\"Error: Invalid CSS after \\\"...ial, sans-serif\\\": expected expression (e.g. 1px, bold), was \\\";\\\"\A         on line 2 of main.css\A \A 1: html, body {\A 2:   font: 400 10px 'Helvetica Neue', Helvetica, Arial, sans-serif;\A 3:   margin: 0;\A 4:   padding: 0;\A 5:   overflow-x: hidden;\A 6:   background-color: #e0e0e0; }\A 7: \\"; }\"; }"; }

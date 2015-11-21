@@ -2,7 +2,7 @@ $break-small: 420px; // lol
 $break-large: 1200px;
 
 html, body {
-  font: 400 10px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 400 10px 'Helvetica Neue', Helvetica, Arial, sans-serif 10px;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -25,23 +25,16 @@ ul {
   margin-top: 15vh;
 }
 
-#logo-container, #logo-container svg {
-  width: 40vw;
-  min-width: 300px;
+#logo-container, #logo-container img {
+  max-width: 800px;
+  width: 80vw;
 }
 
 #quote-container {
   margin: auto;
   margin-top: 100px;
   text-align: center;
-  font: 100 1.8rem 'Helvetica Neue';
-}
-
-@media all and (max-width: 650px) {
-  #logo-container, #logo-container svg {
-    width: 60vw;
-    min-width: 100px;
-  }
+  font: 300 1.8rem;
 }
 
 article {
@@ -57,36 +50,24 @@ article {
   }
 }
 
-section{
+section {
   display: flex;
+  flex-direction: row;
 
-  @media all and (max-width: $break-small){
+  @media all and (max-width: $break-small) {
     flex-direction: column;
   }
-
-  flex-direction: row;
-}
-
-#animated-wheel {
-  @media all and (max-width: $break-small){
-    width: 100vw;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  width: 50vw;
 }
 
 .half-text {
-  @media all and (max-width: $break-small){
-    width: 100vw;
-  }
   font-size: 14pt;
   padding-top: 1vh;
   padding-bottom: 1vh;
   padding-left: 2vh;
   padding-right: 2vh;
   width: 50vw;
+
+  @media all and (max-width: $break-small) {
+    width: 100vw;
+  }
 }

@@ -9,7 +9,7 @@
 <body>
 
   <div id="logo-container">
-    <img src="noidedmedia.svg" width="640px" height="227px" />
+    <img src="noided-media-logo.svg" class="logo" />
   </div>
 
   <div id="quote-container">
@@ -20,8 +20,8 @@
 <script>
   // Take an array of quotes
   // Load a random one every 5 seconds
-  var quote_timer = function(quotes){
-    var update = function(){
+  var quote_timer = function(quotes) {
+    var update = function() {
       // Run this every five seconds
       var quote = quotes[Math.floor(Math.random()*quotes.length)];
       var box = document.getElementById("quote-container");
@@ -32,11 +32,11 @@
     // Then load a new one every six seconds
     setInterval(update, 30000);
   }
-  window.onload = function(){
+  window.onload = function() {
     var x = new XMLHttpRequest();
     x.open("GET", "quotes.json", true);
-    x.onreadystatechange=function(){
-      if(x.readyState == 4 && x.status == 200){
+    x.onreadystatechange=function() {
+      if (x.readyState == 4 && x.status == 200) {
         // Parse the JSON into an object.
         var obj = JSON.parse(x.responseText);
         var quotes = obj["quotes"];
