@@ -1,49 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Noided Media</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-</head>
-<body>
+---
+layout: default
+---
 
-  <div id="logo-container">
-    <img src="noided-media-logo.svg" class="logo" />
-  </div>
+<div class="home">
 
-  <div id="quote-container">
-    <!-- QUOTE GOES HERE -->
-  </div>
-</body>
-<!-- He also made a different guy use inline scripts. -->
-<script>
-  // Take an array of quotes
-  // Load a random one every 5 seconds
-  var quote_timer = function(quotes) {
-    var update = function() {
-      // Run this every five seconds
-      var quote = quotes[Math.floor(Math.random()*quotes.length)];
-      var box = document.getElementById("quote-container");
-      box.innerHTML =  "\"" + quote + "\"";
-    };
-    // Load a quote immediately
-    update();
-    // Then load a new one every six seconds
-    setInterval(update, 30000);
-  }
-  window.onload = function() {
-    var x = new XMLHttpRequest();
-    x.open("GET", "quotes.json", true);
-    x.onreadystatechange=function() {
-      if (x.readyState == 4 && x.status == 200) {
-        // Parse the JSON into an object.
-        var obj = JSON.parse(x.responseText);
-        var quotes = obj["quotes"];
-        quote_timer(quotes);
-      }
-    }
-    x.send();
-  }
-</script>
-</html>
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
