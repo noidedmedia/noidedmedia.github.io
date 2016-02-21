@@ -23,9 +23,12 @@
 .people-photos {
   margin: auto;
   text-align: center;
+  display: -webkit-flex;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: center;
+          justify-content: center;
 
   img {
     width: 200px;
