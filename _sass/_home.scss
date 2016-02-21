@@ -1,7 +1,14 @@
 .home {
-  margin-top: calc(50vh - 140px);
+  margin-top: calc(50vh - 180px);
 
   img {
     pointer-events: none;
+  }
+
+  p {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
   }
 }

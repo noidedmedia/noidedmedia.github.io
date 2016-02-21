@@ -6,4 +6,38 @@ layout: blank-slate
 
   {% include image.html url="/images/logo/noided-media-logo.svg" %}
 
+  <p id="quote-container">
+
+  </p>
+
+  <script>
+    // Take an array of quotes
+    // Load a random one every 5 seconds
+    var quote_timer = function(quotes) {
+      var update = function() {
+        // Run this every five seconds
+        var quote = quotes[Math.floor(Math.random()*quotes.length)];
+        var box = document.getElementById("quote-container");
+        box.innerHTML =  "\"" + quote + "\"";
+      };
+      // Load a quote immediately
+      update();
+      // Then load a new one every six seconds
+      setInterval(update, 30000);
+    }
+    window.onload = function() {
+      var x = new XMLHttpRequest();
+      x.open("GET", "quotes.json", true);
+      x.onreadystatechange=function() {
+        if (x.readyState == 4 && x.status == 200) {
+          // Parse the JSON into an object.
+          var obj = JSON.parse(x.responseText);
+          var quotes = obj["quotes"];
+          quote_timer(quotes);
+        }
+      }
+      x.send();
+    }
+  </script>
+
 </div>
