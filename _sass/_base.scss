@@ -83,6 +83,12 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h1 + h1, h1 + h2, h2 + h2, h2 + h3, h3 + h3{
+    margin-top: 0;
 }
 
 

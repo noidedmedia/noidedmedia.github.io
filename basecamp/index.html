@@ -1,107 +1,89 @@
 ---
 layout: blank-slate
-title: "Basecamp"
+title: "Hi Basecamp!"
 permalink: /basecamp/
 ---
 
-<div class="basecamp connor">
+<div class="basecamp">
+  <div class="basecamp-logo">
+    {% include image.html url="/images/basecamp/basecamp-logo.png" %}
+  </div>
+
+  <h1 class="less-margin-top bold">Hi Basecamp!</h1>
+  <h1 class="no-margin-top">We're Anthony Super and Connor Shea.</h1>
+
+  <div class="people-photos">
+    {% include image.html url="/images/basecamp/AnthonySuperPhoto.png" caption="Anthony" %}
+    {% include image.html url="/images/basecamp/ConnorSheaPhoto.png" caption="Connor" %}
+  </div>
+
   <section>
-    <h1>Hi, I'm Connor</h1>
+    <p class="center"><!-- Tagline -->
+    <p class="center">We've been working with each other for 18 months now, and our skills compliment each other particularly well.
+    <p class="center">Connor is a graphic designer and now web designer. Anthony is a programmer. We're both big fans of Basecamp's philosophy as a company, and would love the opportunity to work with and learn from some great people.
+  </section>
 
-    {% include image.html url="/images/basecamp/ConnorSheaPhoto.png" %}
+  <section>
+    <h2>We've worked together on a few projects</h2>
+    
+    <a href="https://www.imagehex.com/">
+      {% include image.html url="/images/basecamp/ImageHex.png" %}
+    </a>
 
-    <h2>This is a fancy picture of me</h2>
+    <p><a href="https://www.imagehex.com/">ImageHex</a> is an art website – still in development – with the goal of making commissioning art online an easier, more enjoyable process for both artists and clients. It's built with Rails, and has been a huge undertaking, with more than 1800 commits in our GitHub repository.
 
-    <h2>I'm a User Interface Designer and Developer, and I have quite a fondness for GIFs.</h2>
+    <p><b>Anthony</b>: <!--- Anthony's description of the project -->
 
-    {% include image.html url="/images/basecamp/1.gif" caption="Let's get the most important thing out of the way: I pronounce GIF with a hard G. Like gorilla, not giraffe." %}
+    <p><b>Connor</b>: ImageHex has been a labour of love over the past year and a half. We've gone to great lengths to make the site both look good and work well. The site is still very rough around the edges, but it's fast, functional, and I think it's been a huge accomplishment for two 18-year-olds working in their spare time. I started from scratch with my web development skills, and I've learned HTML, CSS/SCSS, Git, JavaScript, jQuery, React.js, and Rails (with a healthy dose of Google and some trial-and-error).
 
-    {% include image.html url="/images/basecamp/2.gif" %}
+    <a href="http://www.noided.media/WavHead/">
+      {% include image.html url="/images/basecamp/WavHead.png" %}
+    </a>
 
-    <h3>I've made some stuff</h3>
+    <p><a href="http://www.noided.media/WavHead/">WavHead</a> is a locally-hosted "jukebox" for parties. Built with Sinatra, it was made to be used at LAN parties we had with our group of friends so anyone connected to the network could vote on what music was being played over a connected sound system. It was built and released in late 2014, and its source code <a href="https://github.com/noidedmedia/WavHead">is available on GitHub</a>.
 
+    <p><b>Anthony</b>: <!--- Anthony's description of the project -->
 
-    <h3>I know some things</h3>
+    <p><b>Connor</b>: Working on a project like WavHead was a huge learning experience for me. There were a lot of constraints we had to think about, since it had to be hosted locally, and therefore lightweight. Most people at parties would probably be interacting with it on their phone, so I learned responsive design. We had minimal bells-and-whistles, we didn't even use a CSS pre-processor. And yeah, the promotional site has scroll-jacking. I've since gotten a lot better at web design, and I'd really like to go back and fix that some time.
 
-    <ul class="skills-list">
-      <li><img src="/images/basecamp/rails.png" alt="Rails" />
-      <li><img src="/images/basecamp/scss.png" alt="SCSS" />
-      <li><img src="/images/basecamp/git.png" alt="Git" />
-      <li><img src="/images/basecamp/javascript.png" alt="JavaScript" />
-      <li><img src="/images/basecamp/react.png" alt="React" />
-      <li><img src="/images/basecamp/sketch.png" alt="Sketch" />
-      <li><img src="/images/basecamp/illustrator.png" alt="Adobe Illustrator" />
-    </ul>
+    <a href="http://www.fictiondock.com/">
+      {% include image.html url="/images/basecamp/Fiction-Dock.png" %}
+    </a>
 
-    <h3>Badly designed software makes me feel like this</h3>
+    <p><a href="http://www.fictiondock.com/">Fiction Dock</a> is "a better place for fan fiction". We built it over the summer last year, and it's also <a href="https://github.com/noidedmedia/Fiction-Dock/">available on GitHub</a>.
 
-    {% include image.html url="/images/basecamp/3.gif" %}
+    <p><b>Anthony</b>: <!--- Anthony's description of the project -->
 
-    <h3>Here's what I'll look like if you accept me for a position</h3>
+    <p><b>Connor</b>: We took a break from working on ImageHex to get more practice developing a Rails app from scratch, the result was Fiction Dock. We learned the value of React.js for complex web interfaces, but we used it sparingly, only on pages that really needed that deep level of interaction. Unfortunately, it never gained proper traction as we went on to focus more on ImageHex and other commitments.
+  </section>
 
-    {% include image.html url="/images/basecamp/4.gif" %}
+  <section>
+    <h2>Sometimes we even work separately!</h2>
+    <h3>Anthony</h3>
+    <!--- Anthony's description -->
 
-    <a href="{{ site.url }}/assets/ConnorSheaResume.pdf">Résumé</a> / <a href="https://twitter.com/connorjshea">Twitter</a> / <a href="https://github.com/connorshea">GitHub</a> / <a href="https://connorshea.github.io">Website</a>
+    <h3>Connor</h3>
+    <p>I'm a web designer and developer with a bit of a neurotic attention to detail. I frequently have to pull myself away from obsessing over minute details so that I can actually ship something out. I definitely think I've gotten better about moderating myself over the past year.
+
+    <p>Outside of my work at Noided Media, I've built and shipped a redesign of <a href="http://pcgamingwiki.com/wiki/Home">PCGamingWiki</a>, where I serve as the lead web developer/designer. We released a <a href="http://community.pcgamingwiki.com/page/blog/_/announcements/new-skin-pcgamingwiki-overclocked-r185">blog post detailing the exact improvements</a>, most notably page speed for a given wiki article going from "76 requests, 443 KB of content, and a load time of 4.47 seconds down to 26 requests, 370 KB of content, and a load time of 2.60 seconds." To my knowledge, it's the first truly responsive MediaWiki skin that's been released as open source, something I'm particularly proud of.
+
+    <p>I've also done freelance work, designing the logo and building <a href="https://fna-xna.github.io/">the site for indie game engine FNA</a> using Jekyll. The creator of FNA <a href="https://plus.google.com/+flibitijibibo/posts/ZzEYaV4EAxV">was pretty happy with it</a>. Before learning web development, I did software mockups – such as my <a href="https://www.behance.net/gallery/18931105/Steam-Redesign-Concept">Steam Redesign Mockup</a> – as well as more traditional graphic design, samples of which you can find on <a href="https://www.imagehex.com/@connor">my ImageHex profile</a>.
+  </section>
+
+  <section>
+    <h2>What we hope to offer</h2>
+    <h3>Anthony</h3>
+    <!--- Anthony's description -->
+
+    <h3>Connor</h3>
+    <p>The reasons I'm applying for this internship are two-fold: I love making users happy and I love companies that are committed to making things <i>better</i>. Basecamp is known for making users happy and being good stewards to the community with open source projects like Rails.
+    <p>I'm applying in the hopes that I can work with Basecamp's support team to find pain points in their current workflows and transforming them into Rails views. Better workflows and tools mean better response times, and better response times mean happier users!
+  </section>
+
+  <section>
+    <h2>Interested?</h2>
+
+    <p class="center"><b>Connor:</b> <a href="https://connorshea.github.io">Website</a> / <a href="https://github.com/connorshea">GitHub</a> / <a href="https://twitter.com/connorjshea">Twitter</a> / <a href="{{ site.url }}/assets/ConnorSheaResume.pdf">Resume</a>
   </section>
 </div>
-
-<br>
-<br>
-<br>
-
-<div class="basecamp anthony">
-  <section>
-    <h1>Anthony Super</h1>
-    <p>Hello. I am Anthony Super.<sup><a href="#fn-1">[1]</a></sup>
-    You probably guessed that from the <code>&lt;h1&gt;</code> with the words "Anthony Super" in it.
-    <p>I'm only a freshman in college, but I have been programming for a few years.
-    I enjoy many of the things you guys build.
-    Heck, I work so much with Rails I'm sure DHH owns at least 5% of my soul.
-    When I saw that you had an internship opportunity, I knew I had to apply.
-  </section>
-  <section>
-    <h2>Why I'm Applying</h2>
-    <p>I wouldn't be applying to this internship if I didn't think it would be beneficial for both of us.
-    Your company philosophy and my personality mesh together very well.
-    I think that this internship will not only let me help you, but also let me grow as a programmer and a person.
-    <section>
-      <h3>Decisiveness</h3>
-      <p>You want a team of "managers of one."
-      I'm the owner of half of a two-person startup.
-      In such a small company, both of us have to call the shots for our own responsibilities.
-      While we at Noided Media have been managing fairly well, I want to be able to grow further.
-      I'll be honest: my cofounder and I have had some communication issues.
-      There have been times where both of us have conflicting ideas of what needs to be done, and our productivity has suffered as a result.
-      The opportunity to work with a mentor will be invaluable to me, as it will provide me with the insight I need to retain my independent action while improving my ability to work with others.
-    </section>
-    <section>
-      <h3>Scale</h3>
-      <p>My company is still in the early stages.
-      We have users that we consult with on features, but we don't have many of them.
-      Basecamp, on the other hand, has hundreds of thousands, if not millions, of users.
-      Trying to find the needs of our users has been an extremely interesting challenge, even with our small scale.
-      I can't imagine how complex it is when you have a user base as big as Basecamp's&mdash;or how rewarding it feels when you get the feature just right.
-      The opportunity to intern with Basecamp will let me learn to interact with users at scale, giving me the knowledge I need to succeed in my own company.
-    </section>  
-    <section>
-      <h3>Philosophy</h3>
-      I've always admired the type of company Basecamp is.
-      Your employee DHH has <a href="https://m.signalvnoise.com/reconsider-41adf356857">discussed this</a> on Medium.
-      You make great products that provide a useful service.
-      In a world where I've had people tell me to scrap my ideas because they could only make millions instead of billions, we need more of that.
-      <p>
-      This philosophy (as well as the reputation of your products) means that I can trust that your company will focus on what actually matters, as opposed to desperately sprinting towards some arbitrary funding goal.
-    </section>
-  </section>
-  <section>
-    <h2>What I Offer</h2>
-    Of course, I wouldn't be applying to this internship unless I could do something for you guys as well.
-    <section>
-  </section>
-  <section>
-    <h3>Footnotes</h3>
-    <ol id="footnote-list">
-      <li id="fn-1">Yes, that is my real name. It's not particularly special, but sometimes people (mostly while reserving a table) look at me like they think I'm lying when I tell them it. I don't know why&mdash;if I was going to make up a fake name, it would be something like "Metalcrusher" or "Starkiller." 
-    </ol>
-  </section>
 </div>
