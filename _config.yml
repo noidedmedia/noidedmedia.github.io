@@ -1,0 +1,10 @@
+# Site settings
+title: Noided Media
+email: 
+description: Stay Noided.
+baseurl: ""
+url: "http://www.noided.media" # the base hostname & protocol for your site
+github_username: noidedmedia
+
+# Build settings
+markdown: kramdown
