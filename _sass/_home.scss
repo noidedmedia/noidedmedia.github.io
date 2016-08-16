@@ -12,3 +12,18 @@
     font-style: italic;
   }
 }
+
+@keyframes cursorBlink {
+  from,
+  to {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+#quote-cursor {
+  animation: cursorBlink 1s infinite;
+}
