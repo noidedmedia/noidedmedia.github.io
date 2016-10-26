@@ -1,6 +1,7 @@
 .home {
-  margin-top: calc(50vh - 180px);
-
+  padding-top: calc(50vh - 180px);
+  height: 100vh;
+  
   img {
     pointer-events: none;
   }
@@ -26,4 +27,5 @@
 
 #quote-cursor {
   animation: cursorBlink 1s infinite;
+  margin-right: -2px;
 }
