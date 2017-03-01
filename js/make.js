@@ -15,9 +15,16 @@ function startRoll(ary, idx) {
   }, 500);
 }
 
-
-fetch("/make.json").then(function(response) {
-  return response.json();
-}).then(function(resp) {
-  startRoll(resp, 1);
-});
+var h = new XMLHttpRequest();
+h.open("GET", "/make.json");
+h.onreadystatechange = function() {
+  if(h.readyState == XMLHttpRequest.DONE) {
+    if(h.status == 200) {
+      startRoll(JSON.parse(h.responseText), 0);
+    }
+    else {
+      console.error("Not allowed");
+    }
+  }
+}
+h.send();
